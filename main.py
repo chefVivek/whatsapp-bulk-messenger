@@ -7,6 +7,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
+import os
 
 # Functions for the Tkinter UI
 def browse_image():
@@ -20,8 +21,15 @@ def start_whatsapp_script():
         msg = message_var.get("1.0", tk.END).strip()
         image_path = image_path_var.get()
 
-        # Create driver
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+        # Create a profile directory if it does not exist
+        profile_path = os.path.join(os.getcwd(), 'chrome-profile')
+        if not os.path.exists(profile_path):
+            os.makedirs(profile_path)
+
+        # Create driver with user data directory
+        options = webdriver.ChromeOptions()
+        options.add_argument(f"user-data-dir={profile_path}")
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
         # Open browser with default link
         link = 'https://web.whatsapp.com'
@@ -43,7 +51,7 @@ def start_whatsapp_script():
                     time.sleep(action_time)
                     # Find and send image path to input
                     time.sleep(3)
-                    msg_input = driver.find_elements(By.XPATH, '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div[2]/div/span/div/ul/div/div[2]/li/div/input')[0]
+                    msg_input = driver.find_element(By.XPATH, '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div[2]/div/span/div/ul/div/div[2]/li/div/input')
                     msg_input.send_keys(image_path)
                     time.sleep(action_time)
                 # Start the action chain to write the message
@@ -61,18 +69,17 @@ def start_whatsapp_script():
                 continue  # Skip to the next number if there's an error
 
         # Log out of WhatsApp Web
-        menu_btn = driver.find_element(By.XPATH, '//*[@id="app"]/div/div[2]/header/div/div/div/div/span/div/div[2]/div[1]/div')
-        menu_btn.click()
-        time.sleep(action_time)
+        # menu_btn = driver.find_element(By.XPATH, '//*[@id="side"]/header/div[2]/div/span/div[3]/div')
+        # menu_btn.click()
+        # time.sleep(action_time)
 
-        logout_btn = driver.find_element(By.XPATH, '//*[@id="app"]/div/div[2]/div[2]/div[1]/span/div/span/div/div/div/div[2]/div/div/div/button[9]/div/div/div[2]')
-        logout_btn.click()
-        time.sleep(action_time)
+        # logout_btn = driver.find_element(By.XPATH, '//*[@id="side"]/header/div[2]/div/span/div[3]/span/div/ul/li[6]')
+        # logout_btn.click()
+        # time.sleep(action_time)
 
-        logout_ok_btn = driver.find_element(By.XPATH, '//*[@id="app"]/div/span[2]/div/div/div/div/div/div/div[3]/div/button[2]')
-        logout_ok_btn.click()
-        time.sleep(action_time)
-        
+        # logout_ok_btn = driver.find_element(By.XPATH, '//*[@id="app"]/div/span[2]/div/div/div/div/div/div/div[3]/div/button[2]')
+        # logout_ok_btn.click()
+        # time.sleep(action_time)
         
         # Quit the driver
         driver.quit()

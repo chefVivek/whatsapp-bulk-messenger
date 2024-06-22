@@ -1,0 +1,19 @@
+[6700:6868:0622/134412.011:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 126.0.6478.63 (not a warning)
+[6700:6868:0622/134412.081:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[6700:6868:0622/134412.116:WARNING:browser_management_service.cc(128)] EnterpriseLogoUrl fetch failed with error code -1 and MIME type 
+[6700:6868:0622/134413.021:INFO:CONSOLE(132)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v3/y1/r/HfoRcbeJkqv.js?_nc_x=Ij3Wp8lg5Kz (132)
+[6700:6868:0622/134413.041:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'battery'.", source:  (0)
+[6700:6868:0622/134413.041:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'usb-unrestricted'.", source:  (0)
+[9776:19828:0622/134413.050:WARNING:spdy_session.cc(2979)] Received HEADERS for invalid stream 3
+[9776:19828:0622/134413.050:WARNING:spdy_session.cc(2979)] Received HEADERS for invalid stream 5
+[6700:6868:0622/134443.781:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'battery'.", source:  (0)
+[6700:6868:0622/134443.781:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'usb-unrestricted'.", source:  (0)
+[6700:6868:0622/134459.181:INFO:CONSOLE(46)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://static.whatsapp.net/rsrc.php/v3/yt/r/fyeayg1M_Ow.js?_nc_x=Ij3Wp8lg5Kz (46)
+[6700:6868:0622/134506.216:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'battery'.", source:  (0)
+[6700:6868:0622/134506.216:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'usb-unrestricted'.", source:  (0)
+[6700:6868:0622/134514.900:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'battery'.", source:  (0)
+[6700:6868:0622/134514.900:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'usb-unrestricted'.", source:  (0)
+[6700:6868:0622/134530.488:INFO:CONSOLE(46)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://static.whatsapp.net/rsrc.php/v3/yt/r/fyeayg1M_Ow.js?_nc_x=Ij3Wp8lg5Kz (46)
+[9776:22412:0622/134537.434:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
+[9776:22412:0622/134537.434:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net\extras\sqlite\sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
+[6700:6868:0622/134537.585:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
