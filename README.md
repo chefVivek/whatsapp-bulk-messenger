@@ -35,8 +35,8 @@ WhatsApp Bulk Messenger is a Python-based automation tool that allows you to sen
 
 ## Usage
 1. Prepare your contacts and message:
-   - `numbers.txt`: A text file containing the phone numbers (one per line) of the contacts you want to message.
-   - `message.txt`: A text file containing the message you want to send.
+   - `numbers`: prepare a csv text of containing the phone numbers of the contacts you want to message.
+   - `message`: A text containing the message you want to send.
 
 2. Run the script:
    ```bash
